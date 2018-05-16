@@ -1,0 +1,44 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package sinopalindromo;
+
+/**
+ *
+ * @author Mis Documentos
+ */
+public class Sinopalindromo {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+      //*  verificarPalindromo vp = new verificarPalindromo();
+      //*  String palabra = "";
+      //*  String palabrasine = vp.sinEspacio(palabra);
+      //*  boolean respuesta = vp.esPalindromo(palabrasine,0,palabrasine.length()-1);
+      //*  boolean respuestapuedeser = vp.puedeser(palabrasine);
+      //*  if(!respuesta){
+       //*     System.out.println("NO");
+      //*  }else{
+        //*    System.out.println("SI");
+       //* }
+        String cadena = "abcba";
+        System.out.println ("Original: " + cadena);
+        String cadenar = cadena.replaceAll("(.)\\1", "$1");
+        System.out.println ("Resultado: " + cadenar);
+        if((cadena.length()/2) == cadenar.length()+1){
+        System.out.println("NO PERO PUEDE SER");
+        }
+        if((cadena.length()/2) == cadenar.length()){
+        System.out.println("SI");
+        }
+        else
+        {
+        System.out.println("NO");
+        }
+    }
+   
